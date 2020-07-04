@@ -1,3 +1,8 @@
+import paixu.ThreeSevenEight;
+
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * @author 会飞的大野鸡
  * @create 2020/6/27
@@ -7,7 +12,31 @@
 public class DoIt {
     public static void main(String[] args){
         int[][] mm= {{1,5,9} , {10,11,13} , {12,13,15}};
-        System.out.println(new ThreeSevenEight().kthSmallest(mm , 7));
+
+//        List<Integer> numOne = new LinkedList<Integer>();
+//        numOne.add(1);
+//        numOne.add(2);
+//        System.out.println(numOne);
+//        numOne.remove(numOne.size()-1);
+//        System.out.println(numOne);
+//        System.out.println(numOne.isEmpty());
+
+
+        String a = "(()())";
+        String b = "()()";
+        String c = "(()";
+        String d = ")()())";
+        String e = "()(())";
+        String f = "()(()";
+        System.out.println(new ThreeTwo().longestValidParentheses(a));
+        System.out.println(new ThreeTwo().longestValidParentheses(b));
+        System.out.println(new ThreeTwo().longestValidParentheses(c));
+        System.out.println(new ThreeTwo().longestValidParentheses(d));
+        System.out.println(new ThreeTwo().longestValidParentheses(e));
+        System.out.println(new ThreeTwo().longestValidParentheses(f));
+
+
+//        System.out.println(new ThreeSevenEight().kthSmallest(mm , 7));
 //        int[][] a = {{1,2} , {3,4}};
 //        for (int[] i:
 //             a) {
@@ -57,19 +86,19 @@ public class DoIt {
 //        }
 
 
-//        TwoOneFive twoOneFive = new TwoOneFive();
+//        ShuZu.TwoOneFive twoOneFive = new ShuZu.TwoOneFive();
 //        System.out.println(twoOneFive.findKthLargest(a , 5));
 
-//        System.out.println(new SevenOneEight().findLength(a , b));
+//        System.out.println(new ShuZu.SevenOneEight().findLength(a , b));
 ////
-//        System.out.println(new SevenOneEight().findLength(d , c));
+//        System.out.println(new ShuZu.SevenOneEight().findLength(d , c));
 //
 //
-//        System.out.println(new SevenOneEight().findLength(e , f));
+//        System.out.println(new ShuZu.SevenOneEight().findLength(e , f));
 //
-//        System.out.println(new SevenOneEight().findLength(f , e));
+//        System.out.println(new ShuZu.SevenOneEight().findLength(f , e));
 //
-//        System.out.println(new SevenOneEight().findLength(j , k));
+//        System.out.println(new ShuZu.SevenOneEight().findLength(j , k));
 
 //        System.out.println(3 > 3 ? 3 : 3);
 
@@ -92,7 +121,7 @@ public class DoIt {
 //        String[] c = {"OOX" , "XXO" , "OX "};
 //        String[] d = {"   " , "XXO" , "OOO"};
 //
-//        MsOneSivePZeroFour msOneSivePZeroFour = new MsOneSivePZeroFour();
+//        ShuZu.MsOneSivePZeroFour msOneSivePZeroFour = new ShuZu.MsOneSivePZeroFour();
 //        System.out.println(msOneSivePZeroFour.tictactoe(a));
 //        System.out.println(msOneSivePZeroFour.tictactoe(b));
 //        System.out.println(msOneSivePZeroFour.tictactoe(c));

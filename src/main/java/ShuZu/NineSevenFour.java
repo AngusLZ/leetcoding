@@ -1,3 +1,5 @@
+package ShuZu;
+
 import java.util.HashMap;
 
 /**
