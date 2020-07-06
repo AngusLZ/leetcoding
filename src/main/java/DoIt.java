@@ -11,7 +11,31 @@ import java.util.List;
 
 public class DoIt {
     public static void main(String[] args){
-        int[][] mm= {{1,5,9} , {10,11,13} , {12,13,15}};
+        String a = "ab";
+        String b = "b";
+        String c = "aa";
+        String d = "a";
+        String e = "aa";
+        String f = "*";
+        String g = "cb";
+        String h = "?a";
+        String i = "adceb";
+        String j = "*a*b";
+        String k = "cdcb";
+        String l = "a*c?b";
+        String m = "aab";
+        String n = "c*a*b";
+
+        System.out.println(new FourFour().isMatch(a , b));
+        System.out.println(new FourFour().isMatch(c , d));
+        System.out.println(new FourFour().isMatch(e , f));
+        System.out.println(new FourFour().isMatch(g , h));
+        System.out.println(new FourFour().isMatch(i , j));
+        System.out.println(new FourFour().isMatch(k , l));
+        System.out.println(new FourFour().isMatch(m , n));
+
+
+//        int[][] mm= {{1,5,9} , {10,11,13} , {12,13,15}};
 
 //        List<Integer> numOne = new LinkedList<Integer>();
 //        numOne.add(1);
@@ -22,18 +46,18 @@ public class DoIt {
 //        System.out.println(numOne.isEmpty());
 
 
-        String a = "(()())";
-        String b = "()()";
-        String c = "(()";
-        String d = ")()())";
-        String e = "()(())";
-        String f = "()(()";
-        System.out.println(new ThreeTwo().longestValidParentheses(a));
-        System.out.println(new ThreeTwo().longestValidParentheses(b));
-        System.out.println(new ThreeTwo().longestValidParentheses(c));
-        System.out.println(new ThreeTwo().longestValidParentheses(d));
-        System.out.println(new ThreeTwo().longestValidParentheses(e));
-        System.out.println(new ThreeTwo().longestValidParentheses(f));
+//        String a = "(()())";
+//        String b = "()()";
+//        String c = "(()";
+//        String d = ")()())";
+//        String e = "()(())";
+//        String f = "()(()";
+//        System.out.println(new ThreeTwo().longestValidParentheses(a));
+//        System.out.println(new ThreeTwo().longestValidParentheses(b));
+//        System.out.println(new ThreeTwo().longestValidParentheses(c));
+//        System.out.println(new ThreeTwo().longestValidParentheses(d));
+//        System.out.println(new ThreeTwo().longestValidParentheses(e));
+//        System.out.println(new ThreeTwo().longestValidParentheses(f));
 
 
 //        System.out.println(new ThreeSevenEight().kthSmallest(mm , 7));
