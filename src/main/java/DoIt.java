@@ -1,7 +1,5 @@
-import paixu.ThreeSevenEight;
-
-import java.util.LinkedList;
-import java.util.List;
+import Tree.TreeNode;
+import dongtaiguihua.FourFour;
 
 /**
  * @author 会飞的大野鸡
@@ -11,28 +9,67 @@ import java.util.List;
 
 public class DoIt {
     public static void main(String[] args){
-        String a = "ab";
-        String b = "b";
-        String c = "aa";
-        String d = "a";
-        String e = "aa";
-        String f = "*";
-        String g = "cb";
-        String h = "?a";
-        String i = "adceb";
-        String j = "*a*b";
-        String k = "cdcb";
-        String l = "a*c?b";
-        String m = "aab";
-        String n = "c*a*b";
+//        TreeNode treeNode = new TreeNode();
 
-        System.out.println(new FourFour().isMatch(a , b));
-        System.out.println(new FourFour().isMatch(c , d));
-        System.out.println(new FourFour().isMatch(e , f));
-        System.out.println(new FourFour().isMatch(g , h));
-        System.out.println(new FourFour().isMatch(i , j));
-        System.out.println(new FourFour().isMatch(k , l));
-        System.out.println(new FourFour().isMatch(m , n));
+//        int[][] a = {{0,0,0} , {0,1,0} , {0,0,0}};
+//        int[][] b = {{1}};
+//        int[][] c = {
+//                {0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,0,0,1,0,0},
+//                {0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0},
+//                {1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,0,0,0},
+//                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1},
+//                {0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0},
+//                {0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0},
+//                {0,0,0,0,0,0,1,0,0,0,1,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0},
+//                {1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0,0,1},
+//                {0,0,0,0,1,0,0,1,0,1,1,1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0},
+//                {0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0},
+//                {1,0,1,0,1,1,0,1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,0},
+//                {0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,1},
+//                {0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0},
+//                {1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+//                {0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
+//                {0,1,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0},
+//                {0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0},
+//                {0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
+//                {0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+//                {0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0},
+//                {0,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1,1,1,0,0,0,0,0,0},
+//                {0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0},
+//                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0},
+//                {0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0},
+//                {1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
+//                {0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0},
+//                {0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,1,0,0},
+//                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0}};
+//        int[][] d = {{0,0} , {1,1} , {0,0}};
+//        System.out.println(new SixEight().uniquePathsWithObstacles(a));
+//        System.out.println(new SixEight().uniquePathsWithObstacles(b));
+//        System.out.println(new SixEight().uniquePathsWithObstacles(c));
+//        System.out.println(new SixEight().uniquePathsWithObstacles(d));
+
+//        String a = "ab";
+//        String b = "b";
+//        String c = "aa";
+//        String d = "a";
+//        String e = "aa";
+//        String f = "*";
+//        String g = "cb";
+//        String h = "?a";
+//        String i = "adceb";
+//        String j = "*a*b";
+//        String k = "cdcb";
+//        String l = "a*c?b";
+//        String m = "aab";
+//        String n = "c*a*b";
+//
+//        System.out.println(new FourFour().isMatch(a , b));
+//        System.out.println(new FourFour().isMatch(c , d));
+//        System.out.println(new FourFour().isMatch(e , f));
+//        System.out.println(new FourFour().isMatch(g , h));
+//        System.out.println(new FourFour().isMatch(i , j));
+//        System.out.println(new FourFour().isMatch(k , l));
+//        System.out.println(new FourFour().isMatch(m , n));
 
 
 //        int[][] mm= {{1,5,9} , {10,11,13} , {12,13,15}};
