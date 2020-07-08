@@ -9,6 +9,10 @@ import dongtaiguihua.FourFour;
 
 public class DoIt {
     public static void main(String[] args){
+        System.out.println(new OneSixPointOneOne().divingBoard(6 , 9 , 47997));
+
+        System.out.println(new OneSixPointOneOne().divingBoard(1 , 1 , 100000));
+
 //        TreeNode treeNode = new TreeNode();
 
 //        int[][] a = {{0,0,0} , {0,1,0} , {0,0,0}};
